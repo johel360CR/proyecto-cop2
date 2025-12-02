@@ -1,0 +1,16 @@
+﻿@* @model PAWProject.Models.DTO.SpaceFlightDTOs.SpaceApiDTO *@
+@{
+    ViewData["Title"] = "Noticias Espaciales 🛰️";
+}
+
+<div class="container py-4">
+    <h1 class="text-center mb-4">Últimas Noticias del Espacio 🛰️</h1>
+
+    <div id="articlesContainer" class="row row-cols-1 row-cols-md-3 g-4"></div>
+
+    <div id="loader" class="text-center my-3" style="display:none;">
+        <div class="spinner-border"></div>
+    </div>
+</div>
+
+<script src="~/js/lazyloadingarticles.js"></script>
